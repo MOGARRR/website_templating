@@ -1,103 +1,144 @@
 import Image from "next/image";
+import coverPhoto from "../public/StockCake-Floating-Rubber.jpg";
+import heroPhoto from "../public/Classy-Rubber-Hat-Duck.jpeg";
+import galleryDuck1 from "../public/Gallery-Duck-1.jpg";
+import galleryDuck2 from "../public/Gallery-Duck-2.jpg";
+import galleryDuck3 from "../public/Gallery-Duck-3.jpg";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="">
+      {/* ///HERO/// */}
+      <div className="text-center relative w-screen h-[95vh] border-b-2 border-slate ">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          className="w-screen object-cover blur-[3px]"
+          src={coverPhoto}
+          alt=""
+          fill
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="text-5xl absolute inset-x-0 bottom-70 z-0 flex flex-col justify-between text-white">
+          <h1>It's</h1>
+          <h1>Duck</h1>
+          <h1>Season!</h1>
+          <button className=" text-2xl text-white btn btn-neutral btn-outline m-5 rounded-sm border-white">
+            Shop
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+      {/* Our Mission */}
+      <div className="bg-slate-500 p-4 border-b-2 border-slate ">
+        <h1 className="text-4xl m-5 border-b-2 pb-4">About Duck Season</h1>
+        <h2 className="text-2xl mb-4">Ducks with Style</h2>
+        <p className="text-xl text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus, distinctio odio. Aperiam illum laboriosam mollitia
+          dolore nostrum saepe nesciunt voluptatum adipisci impedit quam
+          reiciendis, magni fuga consequatur maiores accusantium illo? Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Sunt consectetur
+          saepe a! Architecto perspiciatis, ratione nam enim voluptate debitis
+          dolor aut sunt rerum. Nulla maiores ut similique officiis repudiandae
+          adipisci.
+        </p>
+      </div>
+      {/* ///SERVICES/PRODUCT/// */}
+      <div className="bg-slate-500 border-b-2 border-slate ">
+        <div>
+          <Image className=" " src={heroPhoto} alt="" />
+        </div>
+        <h1 className="text-4xl m-10 border-b-2 ">Producks</h1>
+        <div className="carousel rounded-box">
+          <div className="carousel-item ">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              alt="Burger"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              alt="Burger"
+            />
+          </div>
+        </div>
+      </div>
+      {/* ///Gallery/// */}
+      <div className="bg-gray-600  p-6 ">
+        <h1 className="text-4xl pb-4">Gallery</h1>
+        <h2 className="text-l mb-4">Explore Duck Fashion</h2>
+        <p className="text-xl">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus, distinctio odio. Aperiam illum laboriosam mollitia
+          dolore nostrum saepe nesciunt voluptatum adipisci impedit quam
+          reiciendis, magni fuga consequatur maiores accusantium illo?
+        </p>
+      </div>
+      <div className="bg-gray-600 border-b-2 border-slate">
+        <div className="text-center relative h-[30vh] mr-4 ">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            className="w-1/3 object-cover"
+            src={galleryDuck1}
+            alt=""
+            fill
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+        <h2 className="text-xl p-4 ">Ducks for every season</h2>
+        <p className="text-l px-4 mb-6">
+          Aperiam illum laboriosam mollitia dolore nostrum saepe nesciunt
+          voluptatum adipisci impedit quam reiciendis, magni fuga consequatur
+          maiores accusantium illo?
+        </p>
+        {/* ////////////////////////////////////// */}
+        <div className="text-center relative h-[30vh] ml-4 ">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            className="w-1/3 object-cover"
+            src={galleryDuck2}
+            alt=""
+            fill
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+        <h2 className="text-xl p-4 ">Laid back Ducks</h2>
+        <p className="text-l px-4 mb-6">
+          Aperiam illum laboriosam mollitia dolore nostrum saepe nesciunt
+          voluptatum adipisci impedit quam reiciendis, magni fuga consequatur
+          maiores accusantium illo?
+        </p>
+        {/* ////////////////////////////////////// */}
+        <div className="text-center relative h-[30vh] mr-4 ">
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            className="w-1/3 object-cover"
+            src={galleryDuck3}
+            alt=""
+            fill
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+        <h2 className="text-xl p-4 ">Ducks from around the world</h2>
+        <p className="text-l px-4 mb-6">
+          Aperiam illum laboriosam mollitia dolore nostrum saepe nesciunt
+          voluptatum adipisci impedit quam reiciendis, magni fuga consequatur
+          maiores accusantium illo?
+        </p>
+      </div>
+      {/* ///CONTACT INFO & HOURS///  */}
+      <div className="bg-slate-500 p-4 border-b-2 border-slate text-center place-items-center">
+        <h1 className="text-5xl m-5 border-b-2 pb-4 ">Contact</h1>
+        <h2 className="text-2xl mb-4">Get in touch</h2>
+        <fieldset className="fieldset  rounded-box w-xs border p-4 text-xl">
+          <label className="label">Name*</label>
+          <input type="text" className="input" />
+
+          <label className="label">Email*</label>
+          <input type="email" className="input" />
+
+          <label className="label">Subject*</label>
+          <input type="text" className="input" />
+
+          <label className="label">Message*</label>
+          <textarea className="textarea" placeholder=""></textarea>
+          <button className=" text-xl text-white btn btn-neutral btn-outline m-5 rounded-sm border-white">
+            Send
+          </button>
+        </fieldset>
+      </div>
     </div>
   );
 }
