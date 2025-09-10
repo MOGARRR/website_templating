@@ -5,6 +5,7 @@ import galleryDuck1 from "../public/Gallery-Duck-1.jpg";
 import galleryDuck2 from "../public/Gallery-Duck-2.jpg";
 import galleryDuck3 from "../public/Gallery-Duck-3.jpg";
 import Hero from "./components/Hero";
+import MissionStatement from "./components/MissionStatement";
 
 export default function Home() {
   return (
@@ -12,20 +13,7 @@ export default function Home() {
       {/* ///HERO/// */}
       <Hero image={coverPhoto}/>
       {/* Our Mission */}
-      <div className="bg-slate-500 p-4 border-b-2 border-slate ">
-        <h1 className="text-4xl m-5 border-b-2 pb-4">About Duck Season</h1>
-        <h2 className="text-2xl mb-4">Ducks with Style</h2>
-        <p className="text-xl text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus, distinctio odio. Aperiam illum laboriosam mollitia
-          dolore nostrum saepe nesciunt voluptatum adipisci impedit quam
-          reiciendis, magni fuga consequatur maiores accusantium illo? Lorem
-          ipsum dolor, sit amet consectetur adipisicing elit. Sunt consectetur
-          saepe a! Architecto perspiciatis, ratione nam enim voluptate debitis
-          dolor aut sunt rerum. Nulla maiores ut similique officiis repudiandae
-          adipisci.
-        </p>
-      </div>
+      <MissionStatement/>
       {/* ///SERVICES/PRODUCT/// */}
       <div className="bg-slate-500 border-b-2 border-slate ">
         <div>
