@@ -6,6 +6,7 @@ import galleryDuck2 from "../public/Gallery-Duck-2.jpg";
 import galleryDuck3 from "../public/Gallery-Duck-3.jpg";
 import Hero from "./components/Hero";
 import MissionStatement from "./components/MissionStatement";
+import ServicesProducts from "./components/ServicesProducts";
 
 export default function Home() {
   return (
@@ -15,26 +16,7 @@ export default function Home() {
       {/* Our Mission */}
       <MissionStatement/>
       {/* ///SERVICES/PRODUCT/// */}
-      <div className="bg-slate-500 border-b-2 border-slate ">
-        <div>
-          <Image className=" " src={heroPhoto} alt="" />
-        </div>
-        <h1 className="text-4xl m-10 border-b-2 ">Producks</h1>
-        <div className="carousel rounded-box">
-          <div className="carousel-item ">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-              alt="Burger"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-              alt="Burger"
-            />
-          </div>
-        </div>
-      </div>
+      <ServicesProducts image={heroPhoto}/>
       {/* ///Gallery/// */}
       <div className="bg-gray-600  p-6 ">
         <h1 className="text-4xl pb-4">Gallery</h1>
