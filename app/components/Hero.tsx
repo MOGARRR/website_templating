@@ -3,15 +3,16 @@ import Image, { StaticImageData } from "next/image";
 
 interface heroProps {
   image: StaticImageData;
+  imageAlt: string;
 }
 
-const Hero: React.FC<heroProps> = ({ image }) => {
+const Hero: React.FC<heroProps> = ({ image, imageAlt }) => {
   return (
     <div className="text-center relative w-screen h-[95vh] border-b-2 border-slate ">
       <Image
         className="w-screen object-cover blur-[3px]"
         src={image}
-        alt=""
+        alt={imageAlt}
         fill
       />
       <div className="text-5xl absolute inset-x-0 bottom-70 z-0 flex flex-col justify-between text-white">
