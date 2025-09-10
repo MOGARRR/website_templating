@@ -4,27 +4,13 @@ import heroPhoto from "../public/Classy-Rubber-Hat-Duck.jpeg";
 import galleryDuck1 from "../public/Gallery-Duck-1.jpg";
 import galleryDuck2 from "../public/Gallery-Duck-2.jpg";
 import galleryDuck3 from "../public/Gallery-Duck-3.jpg";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
     <div className="">
       {/* ///HERO/// */}
-      <div className="text-center relative w-screen h-[95vh] border-b-2 border-slate ">
-        <Image
-          className="w-screen object-cover blur-[3px]"
-          src={coverPhoto}
-          alt=""
-          fill
-        />
-        <div className="text-5xl absolute inset-x-0 bottom-70 z-0 flex flex-col justify-between text-white">
-          <h1>It's</h1>
-          <h1>Duck</h1>
-          <h1>Season!</h1>
-          <button className=" text-2xl text-white btn btn-neutral btn-outline m-5 rounded-sm border-white">
-            Shop
-          </button>
-        </div>
-      </div>
+      <Hero image={coverPhoto}/>
       {/* Our Mission */}
       <div className="bg-slate-500 p-4 border-b-2 border-slate ">
         <h1 className="text-4xl m-5 border-b-2 pb-4">About Duck Season</h1>
