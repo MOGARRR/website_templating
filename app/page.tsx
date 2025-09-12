@@ -8,7 +8,7 @@ import GalleryList from "./components/GalleryList";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       {/* ///HERO/// */}
       <Hero image={coverPhoto} imageAlt="Rubber duck floating in water" />
       {/* Our Mission */}
@@ -22,6 +22,6 @@ export default function Home() {
       <GalleryList />
       {/* ///CONTACT INFO & HOURS///  */}
       <Contact />
-    </div>
+    </>
   );
 }
