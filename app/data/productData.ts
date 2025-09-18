@@ -1,0 +1,37 @@
+interface DataSet {
+  id: number;
+  image: string;
+  imageAlt: string;
+  name: string;
+  price: number;
+}
+
+const productSet1: DataSet = {
+  id: 1,
+  image: "/images/Gallery-Duck-1.jpg",
+  imageAlt: "Rubber duck wearing holiday items in a tree",
+  name: "Garry the Duck",
+  price: 9.99,
+};
+
+const productSet2: DataSet = {
+  id: 2,
+  image: "/images/Gallery-Duck-2.jpg",
+  imageAlt: "Rubber duck wearing sunglasses while in a pool",
+  name: "Harold Duck jr.",
+  price: 11.99,
+};
+
+const productSet3: DataSet = {
+  id: 3,
+  image: "/images/Gallery-Duck-3.jpg",
+  imageAlt:
+    "Rubber duck wearing black top and hat, sitting in the grass beside a flower",
+  name: "Sir. Quackington",
+  price: 13.99,
+};
+
+
+const productSetArray = [productSet1, productSet2, productSet3];
+
+export default productSetArray;
