@@ -3,6 +3,7 @@ interface DataSet {
   image: string;
   imageAlt: string;
   name: string;
+  descritption: string;
   price: number;
 }
 
@@ -11,6 +12,7 @@ const productSet1: DataSet = {
   image: "/images/Gallery-Duck-1.jpg",
   imageAlt: "Rubber duck wearing holiday items in a tree",
   name: "Garry the Duck",
+  descritption: 'description',
   price: 9.99,
 };
 
@@ -19,6 +21,7 @@ const productSet2: DataSet = {
   image: "/images/Gallery-Duck-2.jpg",
   imageAlt: "Rubber duck wearing sunglasses while in a pool",
   name: "Harold Duck jr.",
+  descritption: 'description',
   price: 11.99,
 };
 
@@ -28,6 +31,7 @@ const productSet3: DataSet = {
   imageAlt:
     "Rubber duck wearing black top and hat, sitting in the grass beside a flower",
   name: "Sir. Quackington",
+  descritption: 'description',
   price: 13.99,
 };
 
@@ -37,6 +41,7 @@ const productSet4: DataSet = {
   imageAlt:
     "Rubber duck floating on top of water",
   name: "Burt the Duck",
+  descritption: 'description',
   price: 9.99,
 };
 
@@ -46,6 +51,7 @@ const productSet5: DataSet = {
   imageAlt:
     "Rubber duck wearing glasses and a hat in a pool",
   name: "Edaward the Duck",
+  descritption: 'description',
   price: 11.99,
 };
 

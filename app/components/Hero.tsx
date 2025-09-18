@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface heroProps {
   image: StaticImageData;
@@ -19,9 +20,9 @@ const Hero: React.FC<heroProps> = ({ image, imageAlt }) => {
         <h1>It's</h1>
         <h1>Duck</h1>
         <h1>Season!</h1>
-        <button className=" text-2xl text-white btn btn-neutral btn-outline m-5 rounded-sm border-white">
+        <Link href={{ pathname: '/store'}} className=" text-2xl text-white btn btn-neutral btn-outline m-5 rounded-sm border-white">
           Shop
-        </button>
+        </Link>
       </div>
     </div>
   );
