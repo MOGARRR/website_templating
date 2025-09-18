@@ -31,7 +31,25 @@ const productSet3: DataSet = {
   price: 13.99,
 };
 
+const productSet4: DataSet = {
+  id: 4,
+  image: "/images/StockCake-Floating-Rubber.jpg",
+  imageAlt:
+    "Rubber duck floating on top of water",
+  name: "Burt the Duck",
+  price: 9.99,
+};
 
-const productSetArray = [productSet1, productSet2, productSet3];
+const productSet5: DataSet = {
+  id: 5,
+  image: "/images/Classy-Rubber-Hat-Duck.jpeg",
+  imageAlt:
+    "Rubber duck wearing glasses and a hat in a pool",
+  name: "Edaward the Duck",
+  price: 11.99,
+};
+
+
+const productSetArray = [productSet1, productSet2, productSet3, productSet4, productSet5];
 
 export default productSetArray;
