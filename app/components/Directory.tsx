@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 interface directoryProps {
-  routeName: string;
-  routeLink: string;
+  routeName: string | null;
+  routeLink: string | null;
 }
 
 const Directory: React.FC<directoryProps> = ({ routeName, routeLink }) => {
@@ -12,7 +12,9 @@ const Directory: React.FC<directoryProps> = ({ routeName, routeLink }) => {
       <Link href="/" className="pr-1">
         Home
       </Link>
-      <Link href={{pathname:routeLink}}> &gt; {routeName}</Link>
+      {routeLink && (
+        <Link href={{ pathname: routeLink }}> &gt; {routeName}</Link>
+      )}
     </div>
   );
 };
