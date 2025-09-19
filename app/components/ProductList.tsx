@@ -17,6 +17,7 @@ const ProductList = () => {
         {productSetArray.map((set) => (
           <ProductListItem
             key={set.id}
+            id={set.id}
             image={set.image}
             imageAlt={set.imageAlt}
             name={set.name}

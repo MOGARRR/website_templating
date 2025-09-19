@@ -1,7 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 interface ProductListItemProps {
+  id: number;
   image: string;
   imageAlt: string;
   name: string;
@@ -9,13 +12,14 @@ interface ProductListItemProps {
 }
 
 const ProductListItem: React.FC<ProductListItemProps> = ({
+  id,
   image,
   imageAlt,
   name,
   price,
 }) => {
   return (
-    <div className="card bg-base-100 w-5/6 shadow-sm m-4 h-[30vh] ">
+    <Link href={`storeItem/${id}`} className="card bg-base-100 w-5/6 shadow-sm m-4 h-[30vh] ">
       <figure>
         <img src={image} alt={imageAlt} />
       </figure>
@@ -23,7 +27,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({
         <h2 className="card-title text-xl">{name}</h2>
         <h3 className="text-xl">${price}</h3>
       </div>
-    </div>
+    </Link>
   );
 };
 
