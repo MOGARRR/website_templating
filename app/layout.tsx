@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Link  from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -96,8 +96,9 @@ export default function RootLayout({
         {children}
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
           <nav className="grid grid-flow-col gap-4">
-            <Link href={{pathname: '/about'}} className="link link-hover">About us</Link>
-            <Link href={{pathname: '/contact'}} className="link link-hover">Contact</Link>
+            <Link href={{pathname: '/about'}} className="link link-hover underline">About us</Link>
+            <Link href={{pathname: '/contact'}} className="link link-hover underline">Contact</Link>
+             <Link href={{pathname: '/store'}} className="link link-hover underline">Store</Link>
           </nav>
           <nav>
             <div className="grid grid-flow-col gap-4">
