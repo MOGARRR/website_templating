@@ -1,4 +1,4 @@
-import coverPhoto from "../public/images/StockCake-Floating-Rubber.jpg";
+import coverPhoto from "../public/images/StockCake-Floating-Rubber-blur.jpg";
 import heroPhoto from "../public/images/Classy-Rubber-Hat-Duck.jpeg";
 import Hero from "./components/Hero";
 import MissionStatement from "./components/MissionStatement";
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/* ///HERO/// */}
-      <Hero image={coverPhoto} imageAlt="Rubber duck floating in water" />
+      <Hero />
       {/* Our Mission */}
       <MissionStatement />
       {/* ///SERVICES/PRODUCT/// */}

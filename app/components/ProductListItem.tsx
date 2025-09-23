@@ -20,8 +20,8 @@ const ProductListItem: React.FC<ProductListItemProps> = ({
 }) => {
   return (
     <Link href={`storeItem/${id}`} className="card bg-base-100 w-5/6 shadow-sm m-4 h-[30vh] ">
-      <figure>
-        <img src={image} alt={imageAlt} />
+      <figure >
+        <Image  width={500} height={300} src={image} alt={imageAlt} priority />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-xl">{name}</h2>
