@@ -5,33 +5,34 @@ const NavMenu = () => {
   return (
     <>
       <div className="flex ">
-        <div className="bg-base-100 fixed top-0 w-7/9 h-screen flex flex-col select-none z-10 ">
-          <div className="flex flex-col h-full text-5xl">
-            <div className=" w-full p-3 border-b-2">Duck Season</div>
-            <Link href={{ pathname: "/" }} className=" m-1  w-full p-3">
+        <div className="bg-base-100 fixed top-15 w-screen h-3/6 flex flex-col select-none z-10 border-b-2">
+          <div className="flex flex-col h-full text-4xl text-center">
+            <Link
+              href={{ pathname: "/" }}
+              className=" m-1 w-full p-3 border-y-1"
+            >
               Home
             </Link>
             <Link
               href={{ pathname: "/about" }}
-              className=" m-1  w-full p-3 "
+              className="  w-full p-3 m-1 w-full p-3 border-b-1"
             >
               About
             </Link>
             <Link
               href={{ pathname: "/store" }}
-              className=" m-1  w-full p-3"
+              className="  w-full p-3 m-1 w-full p-3 border-b-1"
             >
               Store &gt;
-              <ul className="text-3xl">
+              <ul className="text-2xl">
                 <li className="m-4">Category 1</li>
                 <li className="m-4">Category 2</li>
                 <li className="m-4">Category 3</li>
-
               </ul>
             </Link>
             <Link
               href={{ pathname: "/contact" }}
-              className=" m-1  w-full p-3"
+              className="  w-full p-3 m-1 w-full p-3"
             >
               Contact
             </Link>
