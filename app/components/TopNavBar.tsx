@@ -2,10 +2,12 @@
 
 import React from "react";
 import NavMenu from "./NavMenu";
+import Cart from "./Cart";
 import { useState } from "react";
 
 const TopNavBar = () => {
   const [nav, setNav] = useState(false);
+
   const handleNav = (type: boolean) => (type ? setNav(false) : setNav(true));
   return (
     <>
@@ -83,7 +85,7 @@ const TopNavBar = () => {
           </button>
         </div>
       </div>
-      {nav && <NavMenu />}
+      {nav && <NavMenu active={nav} />}
     </>
   );
 };
