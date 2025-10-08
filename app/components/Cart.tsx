@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 interface CartProps {
   active: boolean;
 }
@@ -23,17 +24,21 @@ const Cart: React.FC<CartProps> = ({ active }) => {
                 <h1>10.00</h1>
               </div>
               <div className="flex justify-between">
-                <h1 className="text-xl mt-2">Shipping</h1>
-                <h1>10.00</h1>
+                <h1 className="text-xl mt-2">Tax</h1>
+                <h1>1.00</h1>
               </div>
               <div className="flex justify-between mt-4 text-xl">
                 <h1 className="text-2xl">Total</h1>
-                <h1>10.00</h1>
+                <h1>$11.00</h1>
               </div>
             </div>
-            <button className="text-xl text-white btn btn-neutral btn-outline rounded-sm border-white ">
+            <Link
+              href={{ pathname: "/checkout" }}
+              className="text-xl text-white btn btn-neutral btn-outline rounded-sm border-white "
+              onClick={() => handleDisplay()}
+            >
               Proceed to checkout
-            </button>
+            </Link>
           </div>
         </div>
       )}
