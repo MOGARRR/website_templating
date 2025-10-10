@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import CartItem from "./CartItem";
+import CartItemList from "./CartItemList";
 interface CartProps {
   active: boolean;
 }
@@ -17,13 +17,7 @@ const Cart: React.FC<CartProps> = ({ active }) => {
               <h1>Order</h1>
               <h1 className="text-lg">Edit Cart</h1>
             </div>
-            {/* ITEMLIST */}
-            <div className="p-2">
-              {/* ITEM  */}
-              <CartItem/>
-              {/* ITEM */}
-            </div>
-            {/* ITEMSLIST */}
+            <CartItemList/>
             <div className="p-4">
               <div className="flex justify-between">
                 <h1 className="text-xl">Subtotal</h1>

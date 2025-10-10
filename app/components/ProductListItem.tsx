@@ -19,7 +19,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({
   price,
 }) => {
   return (
-    <Link href={`storeItem/${id}`} className="card bg-base-100 w-5/6 shadow-sm m-4 h-[30vh] ">
+    <Link href={`/storeItem/${id}`} replace className="card bg-base-100 w-5/6 shadow-sm m-4 h-[30vh] ">
       <figure >
         <Image  width={500} height={300} src={image} alt={imageAlt} priority />
       </figure>

@@ -1,23 +1,36 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-const CartItem = () => {
+
+interface CartItemProps {
+  id: number;
+  image: string;
+  imageAlt: string;
+  name: string;
+  price: number;
+}
+
+const CartItem: React.FC<CartItemProps> = ({id, image, imageAlt, name, price}) => {
   return (
-    <div className="flex justify-between">
-      <div className="flex ">
+    <div className="flex justify-between mt-2">
+      <Link 
+      href={`storeItem/${id}`}
+      className="flex ">
         <img
-          className="w-2/4 h-20 mr-2 border-2"
-          src="/images/Gallery-Duck-3.jpg"
-          alt=""
+          className="w-15 h-20 mr-2 border-2"
+          src={image}
+          alt={imageAlt}
         />
-        <h1 className=" text-xl">Duck name</h1>
-      </div>
+        <h1 className=" text-l mt-1">{name}</h1>
+      </Link>
       <div className="flex justify-between w-1/2 text-center text-xl">
         <div className="flex">
           <span className="h-8 w-7 m-1 text-3xl ">-</span>
           <span className="h-8 w-7 m-1  border-2">1</span>
           <span className="h-8 w-7 m-1 text-3xl">+</span>
         </div>
-        <h1 className="m-1">$10.00</h1>
+        <h1 className="m-1">${price}</h1>
       </div>
     </div>
   );

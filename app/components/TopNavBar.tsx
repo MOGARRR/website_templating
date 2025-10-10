@@ -7,8 +7,7 @@ import { useState } from "react";
 
 const TopNavBar = () => {
   const [navStatus, setNavStatus] = useState(false);
-  const [cartStatus, setCartStatus] = useState(true);
-    ///^ TESTING CHANGE BACK TO FALSE  WHEN DONE ^///
+  const [cartStatus, setCartStatus] = useState(false);
 
 
   const handleNav = (type: boolean) =>
