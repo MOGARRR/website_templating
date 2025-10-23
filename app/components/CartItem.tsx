@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import QuanityButton from "./QuantityButton";
+import { usePathname } from "next/navigation";
 
 interface CartItemProps {
   id: number;
@@ -18,9 +19,10 @@ const CartItem: React.FC<CartItemProps> = ({
   name,
   price,
 }) => {
+  const pathname = usePathname();
   return (
     <div className="flex justify-between mt-2">
-      <Link href={`storeItem/${id}`} className="flex ">
+      <Link href={`/storeItem/${id}`} className="flex ">
         <img className="w-15 h-20 mr-2 border-2" src={image} alt={imageAlt} />
         <h1 className=" text-l mt-1">{name}</h1>
       </Link>
