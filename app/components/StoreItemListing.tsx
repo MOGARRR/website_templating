@@ -16,6 +16,8 @@ const StoreItemListing: React.FC<StoreItemListingProps> = ({
   description,
   price,
 }) => {
+  
+  
   return (
     <div>
       {" "}
@@ -28,8 +30,8 @@ const StoreItemListing: React.FC<StoreItemListingProps> = ({
       </div>
       <div className="m-8 p-4">
         <h1 className="text-2xl mb-2">Quanity *</h1>
-        <div className="border-2 w-1/4 flex text-xl justify-evenly ">
-          <QuanityButton amount={0} classInfo="m-1 text-xl" />
+        <div className="border-2 w-1/4 flex text-xl justify-evenly" id="total">
+          <QuanityButton amount={0} classInfo="m-1 text-xl"/>
         </div>
         <div className="mt-4">
           <button className=" text-2xl text-white btn btn-neutral btn-outline rounded-xl border-white w-full m-1">

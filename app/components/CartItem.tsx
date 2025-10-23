@@ -25,10 +25,6 @@ const CartItem: React.FC<CartItemProps> = ({
         <h1 className=" text-l mt-1">{name}</h1>
       </Link>
       <div className="flex justify-between w-1/2 text-center text-xl">
-        {/*      
-          <span className="h-8 w-7 m-1 text-3xl ">-</span>
-          <span className="h-8 w-7 m-1  border-2">1</span>
-          <span className="h-8 w-7 m-1 text-3xl">+</span> */}
         <QuanityButton amount={1} classInfo="h-8 w-7 m-1 text-3xl" />
 
         <h1 className="m-1">${price}</h1>

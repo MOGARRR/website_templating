@@ -14,16 +14,40 @@ const ServicesProducts: React.FC<servicesProductsProps> = ({image, imageAlt}) =>
         </div>
         <h1 className="text-4xl m-10 border-b-2 ">Producks</h1>
         <div className="carousel rounded-box">
-          <div className="carousel-item ">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+             <div className="carousel-item ">
+            <Image
+            width={350}
+            height={60}
+              src="/images/Gallery-Duck-1.jpg"
               alt="Burger"
+              priority
             />
           </div>
           <div className="carousel-item">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+            <Image
+            width={350}
+            height={60}
+              src="/images/Gallery-Duck-2.jpg"
               alt="Burger"
+              priority
+            />
+          </div>
+          <div className="carousel-item ">
+            <Image
+            width={350}
+            height={60}
+              src="/images/Gallery-Duck-3.jpg"
+              alt="Burger"
+              priority
+            />
+          </div>
+          <div className="carousel-item ">
+            <Image
+            width={350}
+            height={60}
+              src="/images/Classy-Rubber-Hat-Duck.jpeg"
+              alt="Burger"
+              priority
             />
           </div>
         </div>

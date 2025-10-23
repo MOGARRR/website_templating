@@ -3,7 +3,6 @@ import productSetArray from '../data/productData'
 import CartItem from './CartItem'
 
 
-
 const CartItemList = () => {
   return (
     <div className='p-2 m-1'>
