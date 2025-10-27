@@ -23,7 +23,14 @@ const CartItem: React.FC<CartItemProps> = ({
   return (
     <div className="flex justify-between mt-2">
       <Link href={`/storeItem/${id}`} className="flex ">
-        <img className="w-15 h-20 mr-2 border-2" src={image} alt={imageAlt} />
+        <Image
+          width={60}
+          height={30}
+          className=" h-20 mr-2 border-2"
+          src={image}
+          alt={imageAlt}
+          priority
+        />
         <h1 className=" text-l mt-1">{name}</h1>
       </Link>
       <div className="flex justify-between w-1/2 text-center text-xl">

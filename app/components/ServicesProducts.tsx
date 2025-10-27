@@ -17,37 +17,37 @@ const ServicesProducts: React.FC<servicesProductsProps> = ({
       </div>
       <h1 className="text-4xl m-10 border-b-2 ">Producks</h1>
       <div className="carousel rounded-box">
-        <div className="carousel-item ">
+        <div className="carousel-item h-80">
           <Image
             width={350}
-            height={60}
+            height={50}
             src="/images/Gallery-Duck-1.jpg"
             alt="Burger"
             priority
           />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item h-80">
           <Image
             width={350}
-            height={60}
+            height={50}
             src="/images/Gallery-Duck-2.jpg"
             alt="Burger"
             priority
           />
         </div>
-        <div className="carousel-item ">
+        <div className="carousel-item h-80">
           <Image
             width={350}
-            height={60}
+            height={50}
             src="/images/Gallery-Duck-3.jpg"
             alt="Burger"
             priority
           />
         </div>
-        <div className="carousel-item ">
+        <div className="carousel-item h-80">
           <Image
             width={350}
-            height={60}
+            height={50}
             src="/images/Classy-Rubber-Hat-Duck.jpeg"
             alt="Burger"
             priority
